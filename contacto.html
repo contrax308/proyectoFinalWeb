@@ -3,9 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/icon.ico" type="image/x-icon">
   <title>Contacto</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="contactoStyle.css">
+      <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Color de fondo por defecto */
+    background-image: url('img/fondo.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat;     /* Evita que se repita */
+    background-attachment: fixed;
+    color: #333;
+    margin: 0;
+    padding: 0;
+	}
+
+	header h1 {
+	  text-align: center;
+	  margin: 0;
+	}
+
+	main h2 {
+	  text-align: center;
+	  margin: 0;
+	}
+
+	/*logo*/
+	header {
+	  background-color: #333;
+	  padding: 10px 0;
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	}
+
+	.logo {
+	  margin-left: 40px;
+	}
+
+	.logo img {
+	  max-height: 45px;
+	  width: auto;
+	}
+
+
+	header {
+		background-color: lch(46.8% 50.05 280.08 / 0.8); 
+		color: white;
+		padding: 10px 0;
+		text-align: center;
+		
+	}
+
+	nav ul {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	nav ul li {
+		display: inline;
+		margin: 0 15px;
+	}
+
+	nav ul li a {
+		color: white;
+		text-decoration: none;
+	}
+
+	main {
+		padding: 20px;
+	}
+
+	footer {
+		text-align: center;
+		padding: 10px 0;
+		background-color: lch(46.8% 50.05 280.08 / 0.8); /* Fondo semi-transparente */
+		color: white;
+		position: relative;
+		bottom: 0;
+		width: 100%;
+	}
+    </style>
 </head>
 <body>
   <header>
@@ -55,6 +136,30 @@
     <p>&copy; 2025 Raccoon's Pixel Tienda Digital de Dibujos</p>
   </footer>
   <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.querySelector('form');
+      const nameInput = document.getElementById('name');
+      const emailInput = document.getElementById('email');
+      const messageInput = document.getElementById('message');
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault(); // Evita el envío del formulario
+
+        // Validación simple
+        if (nameInput.value.trim() === '' || emailInput.value.trim() === '' || messageInput.value.trim() === '') {
+          alert('Por favor, completa todos los campos.');
+          return;
+        }
+
+        // Simulación de envío exitoso
+        alert('¡Gracias por tu mensaje, ' + nameInput.value + '! Nos pondremos en contacto contigo pronto.');
+
+        // Reiniciar el formulario después del envío
+        form.reset();
+      });
+    });
+  </script>
 </body>
 </html>
 

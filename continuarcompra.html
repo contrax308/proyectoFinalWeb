@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.ico" type="image/x-icon">
+    <title>Finalizar Compra</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="conticompraStyle.css">
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Color de fondo por defecto */
+    background-image: url('img/fondo.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat;     /* Evita que se repita */
+    background-attachment: fixed;
+    color: #333;
+    margin: 0;
+    padding: 0;
+	}
+
+	header h1 {
+	  text-align: center;
+	  margin: 0;
+	}
+
+	main h2 {
+	  text-align: center;
+	  margin: 0;
+	}
+
+	/*logo*/
+	header {
+	  background-color: #333;
+	  padding: 10px 0;
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	}
+
+	.logo {
+	  margin-left: 40px;
+	}
+
+	.logo img {
+	  max-height: 45px;
+	  width: auto;
+	}
+
+
+	header {
+		background-color: lch(46.8% 50.05 280.08 / 0.8); 
+		color: white;
+		padding: 10px 0;
+		text-align: center;
+		
+	}
+
+	nav ul {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	nav ul li {
+		display: inline;
+		margin: 0 15px;
+	}
+
+	nav ul li a {
+		color: white;
+		text-decoration: none;
+	}
+
+	main {
+		padding: 20px;
+	}
+
+	footer {
+		text-align: center;
+		padding: 10px 0;
+		background-color: lch(46.8% 50.05 280.08 / 0.8); /* Fondo semi-transparente */
+		color: white;
+		position: relative;
+		bottom: 0;
+		width: 100%;
+	}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Finalizar Compra</h1>
+    </header>
+
+    <main>
+        <section class="cart-summary">
+            <h2>Resumen de tu Carrito</h2>
+            <div id="cart-items-summary">
+                <!-- Los productos del carrito se cargarán aquí dinámicamente -->
+            </div>
+            <div id="total-price">
+                <strong>Total: $<span id="total-amount">0</span></strong>
+            </div>
+        </section>
+
+        <section class="checkout-form">
+            <h2>Información de Pago</h2>
+            <form id="payment-form">
+                <label for="name">Nombre Completo:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" required>
+
+                <label for="address">Dirección de Envío:</label>
+                <input type="text" id="address" required>
+
+                <label for="card">Número de Tarjeta:</label>
+                <input type="text" id="card" required>
+
+                <button type="submit">Realizar Pago</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Raccoon's Pixel Tienda Digital de Dibujos</p>
+    </footer>
+
+    <script src="compraScript.js"></script>
+    
+    <script>
+        // Simulación de productos en el carrito
+        const cartItems = [
+            { name: 'Producto 1', price: 100 },
+            { name: 'Producto 2', price: 150 },
+            { name: 'Producto 3', price: 200 }
+        ];
+
+        // Cargar productos en el carrito
+        const cartItemsSummary = document.getElementById('cart-items-summary');
+        const totalAmount = document.getElementById('total-amount');
+
+        let total = 0;
+
+        cartItems.forEach(item => {
+            const itemDiv = document.createElement('div');
+            itemDiv.textContent = `${item.name} - $${item.price}`;
+            cartItemsSummary.appendChild(itemDiv);
+            total += item.price;
+        });
+
+        totalAmount.textContent = total;
+
+        // Validación del formulario de pago
+        const paymentForm = document.getElementById('payment-form');
+
+        paymentForm.addEventListener('submit', (event) => {
+            event.preventDefault(); // Evita el envío del formulario
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const address = document.getElementById('address').value.trim();
+            const card = document.getElementById('card').value.trim();
+
+            // Validación simple
+            if (!name || !email || !address || !card) {
+                alert('Por favor, completa todos los campos.');
+                return;
+            }
+
+            // Validación del número de tarjeta (debe ser solo números y tener 16 dígitos)
+            if (!/^\d{16}$/.test(card)) {
+                alert('El número de tarjeta debe tener 16 dígitos.');
+                return;
+            }
+
+            // Simulación de pago exitoso
+            alert('¡Pago realizado con éxito! Gracias por tu compra, ' + name + '.');
+
+            // Reiniciar el formulario
+            paymentForm.reset();
+        });
+    </script>
+</body>
+</html>
