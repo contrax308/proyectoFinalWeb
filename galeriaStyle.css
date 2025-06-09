@@ -1,0 +1,105 @@
+/* Sección de la galería */
+.gallery-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  color: #374151; /* gris oscuro para texto */
+  font-family: 'Inter', system-ui, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Selector de categorías */
+.category-selector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  gap: 16px;
+}
+
+.category-btn {
+  background-color: #f3f4f6; /* gris claro fondo */
+  border: 2px solid transparent;
+  border-radius: 0.75rem;
+  padding: 12px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #6b7280; /* gris medio para texto */
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.2s ease;
+  user-select: none;
+  outline-offset: 4px;
+}
+
+.category-btn:hover,
+.category-btn:focus-visible {
+  background-color: #e0e7ff; /* azul muy claro */
+  color: #4338ca; /* azul oscuro */
+  border-color: #4338ca;
+  transform: scale(1.05);
+}
+
+.category-btn.active {
+  background-color: #4338ca; /* azul oscuro */
+  color: #ffffff;
+  border-color: #4338ca;
+  box-shadow: 0 6px 12px rgba(67, 56, 202, 0.35);
+  cursor: default;
+  transform: scale(1.05);
+}
+
+/* Contenedor con grid */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 30px;
+}
+
+/* Ítems de la galería */
+.gallery-item {
+  background-color: #f9fafb; /* gris muy claro */
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  box-shadow: 0 8px 20px rgba(67, 56, 202, 0.25);
+  transform: translateY(-4px);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.75rem 0.75rem 0 0;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Ajustes para títulos (no usados en contenido actual pero disponibles) */
+.gallery-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 15px 0;
+  text-align: center;
+  color: #1f2937; /* gris oscuro */
+}
+
+/* Responsividad */
+@media (max-width: 640px) {
+  .category-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .gallery-item img {
+    height: 220px;
+  }
+}
+

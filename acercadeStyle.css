@@ -1,0 +1,32 @@
+#about-section {
+  background-color: #1e65c281;
+  padding: 80px 0;
+  border-radius: 9cqi;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #1e65c2;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #c0c0c0;
+}
+
+
+.about-content {
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}

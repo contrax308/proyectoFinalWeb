@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id_producto": 1,
+      "nombre": "Dibujo Digital 'Luz Nocturna'",
+      "imagen": "img/Dibujos/img1.png",
+      "precio": 150.00,
+      "descripcion": "Una ilustración digital vibrante con temática nocturna."
+    },
+    {
+      "id_producto": 2,
+      "nombre": "Arte Vectorial 'Flores Modernas'",
+      "imagen": "img/Dibujos/img2.jpg",
+      "precio": 200.00,
+      "descripcion": "Diseño vectorial con motivos florales y colores suaves."
+    },
+    {
+      "id_producto": 3,
+      "nombre": "Retrato Digital 'Amanecer'",
+      "imagen": "img/Dibujos/img3.jpg",
+      "precio": 180.00,
+      "descripcion": "Retrato de estilo realista con iluminación temprana matinal."
+    },
+    {
+      "id_producto": 4,
+      "nombre": "Estilo Minimalista 'Círculos'",
+      "imagen": "img/Dibujos/img4.jpg",
+      "precio": 130.00,
+      "descripcion": "Composición minimalista con líneas y círculos geométricos."
+    },
+    {
+      "id_producto": 5,
+      "nombre": "Paisaje Digital 'Montañas al Atardecer'",
+      "imagen": "img/Dibujos/img5.jpg",
+      "precio": 220.00,
+      "descripcion": "Paisaje detallado con tonos cálidos de atardecer."
+    },
+    {
+      "id_producto": 6,
+      "nombre": "Dark Anime Girl'",
+      "imagen": "img/Dibujos/img6.jpg",
+      "precio": 240.00,
+      "descripcion": "Anime Dark."
+    }
+  ]
+}

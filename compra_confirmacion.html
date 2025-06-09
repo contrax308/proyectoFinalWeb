@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Confirmación de Compra - Raccoon's Pixel</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
+      color: #374151;
+      margin: 0;
+      padding: 60px 20px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      justify-content: center;
+    }
+    h1 {
+      font-weight: 800;
+      font-size: 48px;
+      color: #10b981;
+      margin-bottom: 24px;
+    }
+    p {
+      font-size: 20px;
+      color: #374151;
+      margin-bottom: 40px;
+    }
+    a {
+      text-decoration: none;
+      background-color: #6c63ff;
+      color: white;
+      padding: 16px 36px;
+      border-radius: 0.75rem;
+      font-weight: 700;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+    a:hover,
+    a:focus {
+      background-color: #5846d1;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Compra realizada con éxito</h1>
+  <p>¡Gracias por su compra! Su pedido ha sido registrado y está en proceso.</p>
+  <a href="index.html">Volver a Inicio</a>
+  <script>
+    // Limpiar carrito localStorage al ingresar en esta página
+    localStorage.removeItem('cart');
+  </script>
+</body>
+</html>

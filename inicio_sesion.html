@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="IniciosesionStyle.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/icon.ico" alt="Nombre de tu empresa" />
+            </a>
+        </div>
+        <h1 class="section-title">Iniciar Sesión</h1>
+    </header>
+
+    <main>
+        <section id="login-section">
+            <div class="login-container">
+
+                <form action="inicio_sesion.php" method="post">
+                    <label for="name">Usuario:</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="name" name="name" placeholder="nombre" required />
+                    </div>
+
+                    <label for="password">Contraseña:</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="password" name="password" placeholder="contraseña" required />
+                    </div>
+
+                    <input type="submit" name="ingresar" value="Ingresar" />
+                    <li><a href="registro.html">Registrarse</a></li>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Raccoon's Pixel Tienda Digital de Dibujos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

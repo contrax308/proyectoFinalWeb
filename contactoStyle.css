@@ -1,0 +1,127 @@
+#contact-section {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+#contact-form,
+#contact-info {
+  width: 100%;
+  max-width: 400px;
+  background-color: #1e65c2;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+#contact-form h2,
+#contact-info h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #faf8f8;
+  animation: float 3s ease-in-out infinite;
+}
+
+#contact-info p {
+  color: #d8d5d5;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-wrapper label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.input-wrapper input,
+.input-wrapper textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.submit-btn {
+  background-color: #c20fc2;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #af4baf;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  display: block;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-item img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.map-link {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #333;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
