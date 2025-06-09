@@ -3,144 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/icon.ico" type="image/x-icon">
     <title>Tienda Digital de Dibujos</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="carousel.css">
-    <style>
-        /* Estilos generales */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            background-image: url('img/fondo.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        header h1 {
-            text-align: center;
-            margin: 0;
-        }
-
-        main h2 {
-            text-align: center;
-            margin: 0;
-        }
-
-        header {
-            background-color: lch(46.8% 50.05 280.08 / 0.8);
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: lch(46.8% 50.05 280.08 / 0.8);
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        /* Estilos para los carruseles */
-        .image-carousel, .image-carousel2 {
-            background-color: #a91dfa3d;
-            border-radius: 10px;
-            padding: 20px;
-            width: 500px;
-            height: 400px;
-            margin: 40px auto; /* Centra el carrusel */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .carousel-container, .carousel-container2 {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-
-        .carousel-track, .carousel-track2 {
-            display: flex;
-            height: 100%;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .carousel-track img, .carousel-track2 img {
-            flex: 0 0 100%;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-
-        .carousel-button, .carousel-button2 {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: #6c63ff;
-            color: white;
-            border: none;
-            padding: 10px 14px;
-            font-size: 24px;
-            cursor: pointer;
-            border-radius: 50%;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-        }
-
-        .carousel-button.prev, .carousel-button2.prev {
-            left: 10px;
-        }
-
-        .carousel-button.next, .carousel-button2.next {
-            right: 10px;
-        }
-
-        /* Estilos para el contenedor de misión, visión y objetivo */
-        .info-container {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .info-section {
-            margin: 0 20px;
-            flex: 1;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -155,114 +20,31 @@
                 <li><a href="galeria.html">Galería</a></li>
                 <li><a href="acercade.html">Acerca de</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="registro.html">Registrarse</a></li>
+                <li><a href="inicio_sesion.html">Iniciar Sesión</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Nuevas Sensaciones</h2>
+        <h2>Nuevas sensaciones</h2>
         <section class="image-carousel">
             <div class="carousel-container">
-                <div class="carousel-track">
-                    <img src="img/Dibujos/img1.png" alt="Imagen 1">
-                    <img src="img/Dibujos/img2.jpg" alt="Imagen 2">
-                    <img src="img/Dibujos/img3.jpg" alt="Imagen 3">
-                </div>
-                <button class="carousel-button prev">&#10094;</button>
-                <button class="carousel-button next">&#10095;</button>
+            <div class="carousel-track">
+                <img src="img/Dibujos/img1.png" alt="Imagen 1">
+                <img src="img/Dibujos/img2.jpg" alt="Imagen 2">
+                <img src="img/Dibujos/img3.jpg" alt="Imagen 3">
             </div>
-        </section>
-        
-        <section class="image-carousel2">
-            <div class="carousel-container2">
-                <div class="carousel-track2">
-                    <img src="img/Dibujos/Shade1.jpg" alt="Imagen 1">
-                    <img src="img/Dibujos/Shade2.jpg" alt="Imagen 2">
-                    <img src="img/Dibujos/Shade3.jpg" alt="Imagen 3">
-                </div>
-                <button class="carousel-button2 prev">&#10094;</button>
-                <button class="carousel-button2 next">&#10095;</button>
+            <button class="carousel-button prev">&#10094;</button>
+            <button class="carousel-button next">&#10095;</button>
             </div>
         </section>
 
-        <h2>Bienvenido a Nuestra Tienda de Dibujos Digitales</h2>
+        <h2>Bienvenido a nuestra tienda de dibujos digitales</h2>
         <p>Explora nuestra colección de arte digital y encuentra la pieza perfecta para ti.</p>
-
-        <section class="info-container">
-            <div class="info-section">
-                <h2>Nuestra Misión</h2>
-                <p>En Raccoon's Pixel, nuestra misión es ofrecer obras de arte digital únicas que inspiren y conecten a las personas.</p>
-            </div>
-            <div class="info-section">
-                <h2>Nuestra Visión</h2>
-                <p>Aspiramos a ser el destino principal para los amantes del arte digital, promoviendo la creatividad y la innovación.</p>
-            </div>
-            <div class="info-section">
-                <h2>Objetivo de Nuestra Página</h2>
-                <p>El objetivo de nuestra página es proporcionar una plataforma accesible para que los artistas muestren su trabajo y los compradores encuentren arte que resuene con ellos.</p>
-            </div>
-        </section>
     </main>
     <footer>
         <p>&copy; 2025 Raccoon's Pixel Tienda Digital de Dibujos</p>
     </footer>
     <script src="carouselimg.js"></script>
     <script src="script.js"></script>
-    <script>
-        // Variables para el primer carrusel
-        const track1 = document.querySelector('.carousel-track');
-        const slides1 = Array.from(track1.children);
-        const nextButton1 = document.querySelector('.carousel-button.next');
-        const prevButton1 = document.querySelector('.carousel-button.prev');
-        let currentIndex1 = 0;
-
-        // Función para mostrar la imagen actual del primer carrusel
-        const updateCarousel1 = (index) => {
-            const slideWidth = slides1[0].getBoundingClientRect().width;
-            track1.style.transform = 'translateX(-' + (slideWidth * index) + 'px)';
-        };
-
-        // Evento para el botón siguiente del primer carrusel
-        nextButton1.addEventListener('click', () => {
-            currentIndex1 = (currentIndex1 + 1) % slides1.length; // Ciclo al inicio
-            updateCarousel1(currentIndex1);
-        });
-
-        // Evento para el botón anterior del primer carrusel
-        prevButton1.addEventListener('click', () => {
-            currentIndex1 = (currentIndex1 - 1 + slides1.length) % slides1.length; // Ciclo al final
-            updateCarousel1(currentIndex1);
-        });
-
-        // Variables para el segundo carrusel
-        const track2 = document.querySelector('.carousel-track2');
-        const slides2 = Array.from(track2.children);
-        const nextButton2 = document.querySelector('.carousel-button2.next');
-        const prevButton2 = document.querySelector('.carousel-button2.prev');
-        let currentIndex2 = 0;
-
-        // Función para mostrar la imagen actual del segundo carrusel
-        const updateCarousel2 = (index) => {
-            const slideWidth = slides2[0].getBoundingClientRect().width;
-            track2.style.transform = 'translateX(-' + (slideWidth * index) + 'px)';
-        };
-
-        // Evento para el botón siguiente del segundo carrusel
-        nextButton2.addEventListener('click', () => {
-            currentIndex2 = (currentIndex2 + 1) % slides2.length; // Ciclo al inicio
-            updateCarousel2(currentIndex2);
-        });
-
-        // Evento para el botón anterior del segundo carrusel
-        prevButton2.addEventListener('click', () => {
-            currentIndex2 = (currentIndex2 - 1 + slides2.length) % slides2.length; // Ciclo al final
-            updateCarousel2(currentIndex2);
-        });
-
-        // Mensaje de bienvenida al cargar la página
-        window.onload = () => {
-            alert('¡Bienvenido a Raccoon\'s Pixel! Explora nuestras obras de arte digital.');
-        };
-    </script>
 </body>
 </html>

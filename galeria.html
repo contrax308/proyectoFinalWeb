@@ -3,89 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="img/icon.ico" type="image/x-icon">
     <title>Galería</title>
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="galeriaStyle.css" />
-    <style>
-    body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Color de fondo por defecto */
-    background-image: url('img/fondo.png'); /* Ruta de la imagen de fondo */
-    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-    background-position: center; /* Centra la imagen en el fondo */
-    background-repeat: no-repeat;     /* Evita que se repita */
-    background-attachment: fixed;
-    color: #333;
-    margin: 0;
-    padding: 0;
-	}
-
-	header h1 {
-	  text-align: center;
-	  margin: 0;
-	}
-
-	main h2 {
-	  text-align: center;
-	  margin: 0;
-	}
-
-	/*logo*/
-	header {
-	  background-color: #333;
-	  padding: 10px 0;
-	  display: flex;
-	  justify-content: space-between;
-	  align-items: center;
-	}
-
-	.logo {
-	  margin-left: 40px;
-	}
-
-	.logo img {
-	  max-height: 45px;
-	  width: auto;
-	}
-
-
-	header {
-		background-color: lch(46.8% 50.05 280.08 / 0.8); 
-		color: white;
-		padding: 10px 0;
-		text-align: center;
-		
-	}
-
-	nav ul {
-		list-style-type: none;
-		padding: 0;
-	}
-
-	nav ul li {
-		display: inline;
-		margin: 0 15px;
-	}
-
-	nav ul li a {
-		color: white;
-		text-decoration: none;
-	}
-
-	main {
-		padding: 20px;
-	}
-
-	footer {
-		text-align: center;
-		padding: 10px 0;
-		background-color: lch(46.8% 50.05 280.08 / 0.8); /* Fondo semi-transparente */
-		color: white;
-		position: relative;
-		bottom: 0;
-		width: 100%;
-	}
-    </style>
 </head>
 <body>
     <header>
@@ -108,8 +28,6 @@
             <div class="category-selector" role="tablist" aria-label="Selecciona categoría de galería">
                 <button class="category-btn active" data-category="dibujos" role="tab" aria-selected="true" tabindex="0">Dibujos</button>
                 <button class="category-btn" data-category="lineart" role="tab" aria-selected="false" tabindex="-1">Lineart</button>
-                <button class="category-btn" data-category="furry" role="tab" aria-selected="false" tabindex="-1">Furry</button>
-                <button class="category-btn" data-category="3D" role="tab" aria-selected="false" tabindex="-1">Modelos 3D</button>
             </div>
 
             <div class="gallery-container">
@@ -143,41 +61,6 @@
                 </div>
                 <div class="gallery-item" data-category="dibujos">
                     <img src="img/Dibujos/img10.jpg" alt="Imagen 10" />
-                </div>
-                
-                <!-- Furry -->
-               <div class="gallery-item" data-category="furry">
-                    <img src="img/Dibujos/King.jpg" alt="Imagen 1" />
-                </div>
-                <div class="gallery-item" data-category="furry">
-                    <img src="img/Dibujos/Lobos.jpeg" alt="Imagen 2" />
-                </div>
-                <div class="gallery-item" data-category="furry">
-                    <img src="img/Dibujos/Shade1.jpg" alt="Imagen 3" />
-                </div>
-                <div class="gallery-item" data-category="furry">
-                    <img src="img/Dibujos/Shade2.jpg" alt="Imagen 4" />
-                </div>
-                <div class="gallery-item" data-category="furry">
-                    <img src="img/Dibujos/Shade3.jpg" alt="Imagen 5" />
-                </div>
-                <div class="gallery-item" data-category="furry">
-                    <img src="img/Dibujos/Shade4.jpg" alt="Imagen 6" />
-                </div>
-                <div class="gallery-item" data-category="furry">
-                    <img src="img/Dibujos/Shade6.png" alt="Imagen 7" />
-                </div>
-                <div class="gallery-item" data-category="furry">
-                    <img src="img/Dibujos/Shade7.png" alt="Imagen 8" />
-                </div>
-                <div class="gallery-item" data-category="furry">
-                    <img src="img/Dibujos/Shade8.png" alt="Imagen 9" />
-                </div>
-                <div class="gallery-item" data-category="furry">
-                    <img src="img/Dibujos/Shade10.jpeg" alt="Imagen 10" />
-                </div>
-                <div class="gallery-item" data-category="furry">
-                    <img src="img/Dibujos/Emperador.jpg" alt="Imagen 11" />
                 </div>
 
                 <!-- Lineart -->
@@ -214,20 +97,6 @@
                 <div class="gallery-item" data-category="lineart">
                     <img src="img/linearts/Simple.jpg" alt="Simple" />
                 </div>
-                
-                <!-- 3D -->
-                <div class="gallery-item" data-category="3D">
-                    <img src="img/Dibujos/Galeria3D-1.png" alt="Furry Lobo Negro 3D" />
-                </div>
-                <div class="gallery-item" data-category="3D">
-                    <img src="img/Dibujos/Galeria3D-2.png" alt="Furry Lobo Blanco 3D" />
-                </div>
-                <div class="gallery-item" data-category="3D">
-                    <img src="img/Dibujos/Galeria3D-3.png" alt="Anime 3D" />
-                </div>
-                <div class="gallery-item" data-category="3D">
-                    <img src="img/Dibujos/Galeria3D-4.png" alt="Anime 3D" />
-                </div>
             </div>
         </section>
     </main>
@@ -235,8 +104,6 @@
     <footer>
         <p>&copy; 2025 Raccoon's Pixel Tienda Digital de Dibujos</p>
     </footer>
-
-	<script src="galeria.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
